@@ -39,10 +39,9 @@ def load_face_data_from_csv(file_path):
 
 def format_name(file_path):
 
-    # Splitting the paths for better readability
     path_parts = file_path.split(os.sep)
     
-    # Extracting Details
+    # Formatting Details
     if len(path_parts) >= 4:
         class_name = path_parts[-3]
         section = path_parts[-2]  
@@ -52,7 +51,7 @@ def format_name(file_path):
         #Marking the name is attendence
         attendence.writerow((roll_number,time.strftime("%H:%M:%S", time.localtime()),full_name,class_name,section))
 
-        # Formatting as "Name, Class, Section : Roll Number"
+        # Formatting and Cleaning NAme
         return f"{full_name} ,{class_name}  {section} : {roll_number}"
     return "Unknown"
 
@@ -66,7 +65,7 @@ video_capture = cv2.VideoCapture(0)
 #tries to check if the face is matching
 try:
     while True:
-        # Capture each frame from the webcam
+        # Captures each frame from the webcam
         ret, frame = video_capture.read()
         if not ret:
             print("Failed to capture frame from camera. Exiting...")

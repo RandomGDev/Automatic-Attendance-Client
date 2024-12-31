@@ -8,12 +8,12 @@ import threading
 
 
 cap = cv2.VideoCapture(0)
-# Initializing video and image handling
+# Open Camera
 def start_video_stream(label):
     def update_frame():
         ret, frame = cap.read()
         if ret:
-            # Convert frame to RGB for Tkinter
+            # Converting frame to RGB
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             img = Image.fromarray(frame)
             imgtk = ImageTk.PhotoImage(image=img)
@@ -23,7 +23,7 @@ def start_video_stream(label):
             label.after(10, update_frame)
     update_frame()
 
-# Initiating and customizing window
+# Window GUI and Size
 window = Tk()
 window.geometry("1000x720")
 window.title("Automatic Attendance Client")

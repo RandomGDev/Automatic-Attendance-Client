@@ -32,7 +32,7 @@ Contributions and feedback are welcome. Submit issues or feature requests via Gi
 ## License
 This is school project and is currently unlicensed.
 
-## Acknowledgements
+## Libraries Used
 - [face_recognition](https://github.com/ageitgey/face_recognition) library
 - [dlib](http://dlib.net/) for ML models
 - [Keyboard](https://pypi.org/project/keyboard/)

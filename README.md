@@ -33,9 +33,10 @@ Contributions and feedback are welcome. Submit issues or feature requests via Gi
 This is school project and is currently unlicensed.
 
 ## Libraries Used
-- [face_recognition](https://github.com/ageitgey/face_recognition) library
-- [dlib](http://dlib.net/) for ML models
-- [Keyboard](https://pypi.org/project/keyboard/)
-- [Tkinter](https://docs.python.org/3/library/tkinter.html)
-- [csv](https://docs.python.org/3/library/csv.html)
-- [pynum](https://numpy.org/): I had most problem with this
+- [face_recognition](https://github.com/ageitgey/face_recognition): Used for image recognition
+- [open-cv](https://opencv.org/): Used for image management
+- [dlib](http://dlib.net/): Used for ML models
+- [Keyboard](https://pypi.org/project/keyboard/): Used to setup HotKeys
+- [Tkinter](https://docs.python.org/3/library/tkinter.html): Used to setup GUI
+- [csv](https://docs.python.org/3/library/csv.html): Used to make Final Files
+- [pynum](https://numpy.org/): Used as substituent of Face_Recognition (I had most problem with this)
